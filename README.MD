@@ -10,4 +10,4 @@ This simple and very small code will generate a nice password for you.
 
 ## To-Do
 
-- [ ] **Add possibility to choose what symbols he can include:** If user input is "qyuioplkjhgvbnmZCSA713" - password will include only this symbols.
+- [X] **Add possibility to choose what symbols he can include:** If user input is "qyuioplkjhgvbnmZCSA712" - password will include only this symbols.
