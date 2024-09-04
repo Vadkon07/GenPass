@@ -97,7 +97,7 @@ int main() {
     if (symbols <= 0) {
         cout << "Invalid input." << endl;
         return 1;  
-    }
+    } //fix it please
 
     if (symbols == '1') {
 	    string password = getPassword(length);
