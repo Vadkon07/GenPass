@@ -83,8 +83,7 @@ int main() {
     int length;
     char symbols;
 
-
-    cout << "Enter the length of the password: ";
+    cout << "Welcome to the GenPass! Enter the length of the password: ";
     cin >> length;
     cout << "Choose a type of password:\n\n 1. Random letters and numbers\n 2. Random letters, numbers, and symbols\n 3. Custom symbols only\n\nEnter your choice: ";
     cin >> symbols;
@@ -101,15 +100,21 @@ int main() {
 
     if (symbols == '1') {
 	    string password = getPassword(length);
-	    cout << "Generated Password: " << password << endl;
+	    cout << endl;
+	    cout << "\033[1;31mGenerated Password: \033[0m" << password << endl << endl;
+	    cout << "Please, copy him and save somwhere. Our app doens't store passwords which we generate for your in order to increase privacy and security of generated passwords." << endl;
     }
     if (symbols == '2') {
 	    string password = getPasswordAdvanced(length);
-	    cout << "Generated Password: " << password << endl;
+	    cout << endl;
+	    cout << "\033[1;31mGenerated Password: \033[0m" << password << endl << endl;
+	    cout << "Please, copy him and save somwhere. Our app doens't store passwords which we generate for your in order to increase privacy and security of generated passwords." << endl;
     }
     if (symbols == '3') {
 	    string password = getPasswordCustom(length);
-	    cout << "Generated Passsord: " << password << endl;
+	    cout << endl;
+	    cout << "\033[1;31mGenerated Password: \033[0m" << password << endl << endl;
+	    cout << "Please, copy him and save somwhere. Our app doens't store passwords which we generate for your in order to increase privacy and security of generated passwords." << endl;
     }
 
     return 0;
